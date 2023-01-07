@@ -1,0 +1,295 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* PAGE SECTIONS */
+body {
+  background-color: #fff;
+  color: #444;
+  font-family: sans-serif;
+
+  border-top: 20px solid #14213d;
+  position: relative;
+}
+
+.container-1 {
+  width: 100%;
+  /* margin-left: auto;
+  margin-right: auto; */
+  margin: 0 auto;
+  /* margin-top: 24px; */
+}
+
+section {
+  margin-bottom: 96px;
+}
+
+.main-header {
+  background-color: #14213d;
+  padding: 20px 40px;
+  /* margin-bottom: 50px; */
+  /* height: 80px; */
+}
+
+h1 {
+  color: #fff;
+  font-size: 52px;
+  text-transform: uppercase;
+  font-style: italic;
+  font-weight: bolder;
+}
+
+/* NAVIGATION MENU */
+.navMenu {
+  background-color: #14213d;
+  padding: 10px 0px;
+  padding-bottom: 40px;
+  margin: 0px;
+  width: 100%;
+  list-style: none;
+  position: relative;
+}
+
+.navMenu ul {
+  position: absolute;
+  left: 0;
+  top: 100%;
+  display: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+.navMenu li {
+  display: inline;
+  float: left;
+  position: relative;
+  padding-left: 0px;
+}
+
+.navMenu a {
+  text-decoration: none;
+  padding: 10px 20px;
+  width: 100%;
+  color: #ffffff;
+  float: left;
+  text-align: center;
+}
+
+.navMenu a:hover {
+  background: #cccccc;
+  color: #333333;
+}
+
+/* Here is the section of CSS code that makes the sub-items appear when you hover over the first level main items. */
+.navMenu li:hover ul {
+  display: block;
+  z-index: 1;
+}
+
+.navMenu ul a {
+  width: 400px;
+  background: #666666;
+}
+
+.navMenu ul li {
+  display: block;
+  margin: 0px;
+}
+
+/* For the third level, we need to add the following CSS styles. */
+.navMenu ul ul {
+  top: 15px;
+  left: 80%;
+}
+
+.navMenu ul ul a {
+  background: #000;
+}
+
+.navMenu li:hover ul ul {
+  display: none;
+}
+
+.navMenu ul li:hover ul {
+  display: block;
+}
+
+/* keep the parent menu item highlighted with a background colour while any of it's child menu items are clicked on/ active */
+ul > li:hover > a {
+  background: #cccccc;
+  color: #333333;
+}
+
+/* For the fourth level, we need to add the following CSS styles. */
+.navMenu ul ul ul {
+  top: 20px;
+  left: 80%;
+}
+
+.navMenu ul ul ul a {
+  background: #14213d;
+}
+
+.navMenu li:hover ul ul ul {
+  display: none;
+}
+
+.navMenu ul li ul li:hover ul {
+  display: block;
+}
+
+/* ARTICLE SECTION */
+article {
+  height: 100vh;
+  padding-bottom: 1300px;
+}
+
+.objektif {
+  padding-top: 100px;
+  padding-left: 300px;
+  padding-right: 300px;
+}
+
+.objektif h3 {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.border-bottom {
+  padding-top: 20px;
+  border-bottom: 3px solid #14213d;
+  margin-left: 350px;
+  margin-right: 350px;
+}
+
+.objektif ul {
+  padding-left: 40px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-top: 0px;
+  line-height: 1;
+  text-align: justify;
+}
+
+.sect {
+  padding-left: 300px;
+  padding-right: 300px;
+  padding-top: 60px;
+}
+
+.sect p {
+  padding-top: 20px;
+  text-align: justify;
+  line-height: 1.5;
+}
+
+.sect-space {
+  padding-top: 20px;
+}
+
+.sect-space a {
+  line-height: 1.5;
+}
+
+.sect a:link,
+.sect a:visited {
+  color: blue;
+  text-decoration: none;
+}
+
+.sect a:hover {
+  background-color: #14213d;
+  color: #fff;
+}
+
+.sect a:active {
+  color: yellow;
+}
+
+.map-space {
+  padding-top: 60px;
+}
+
+.maps {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #14213d;
+}
+
+/* / 12 / 14 / 16 / 18 / 20 / 24 / 30 / */
+
+/* FOOTER SECTION */
+footer {
+  background-color: #14213d;
+  padding-top: 50px;
+  padding-bottom: 10px;
+  text-align: center;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 160px;
+}
+
+footer p {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.left-closing {
+  flex: 1;
+  margin-top: 20px;
+  text-align: start;
+  padding-left: 80px;
+  font-size: 14px;
+
+  /* Aligning tracks inside container: 
+    distribute empty space */
+  /* justify-content: center; */
+  /* justify-content: space-between; */
+  /* align-content: flex-start; */
+
+  /* Aligning items INSIDE cells: moving items around inside cells */
+  /* align-items: flex-end; */
+  /* justify-items: flex-start; */
+}
+
+.right-closing {
+  flex: 1;
+  margin-top: 20px;
+  text-align: start;
+  padding-left: 80px;
+  border-left: 3px solid #fff;
+  font-size: 14px;
+}
+
+.product-colors {
+  display: flex;
+  gap: 5px;
+}
+
+.color {
+  background-color: #000;
+  color: #fff;
+  height: 22px;
+  width: 22px;
+}
+
+.hakcipta {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.penafian {
+  padding-top: 12px;
+  font-size: 16px;
+}
+
+.hubungi {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* / 12 / 14 / 16 / 18 / */
